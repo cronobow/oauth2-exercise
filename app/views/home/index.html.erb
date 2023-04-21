@@ -1,1 +1,9 @@
-home
+<% if current_user.present? %>
+  <p>登入成功</p>
+  <p>Email: <%= current_user.email %></p>
+
+  <p><%= button_to "Logout", destroy_user_session_path, method: :delete %></p>
+
+<% else %>
+  <%= link_to "Line login", line_login_url %>
+<% end %>

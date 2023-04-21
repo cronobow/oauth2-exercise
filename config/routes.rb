@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "home#index"
 
+  get '/line_callback' => 'o_auths#line_callback'
+  get '/line_login' => 'o_auths#line_authorize'
 end

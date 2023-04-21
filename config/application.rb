@@ -20,3 +20,6 @@ module Oauth2Exercise
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+require "o_auth"
+
